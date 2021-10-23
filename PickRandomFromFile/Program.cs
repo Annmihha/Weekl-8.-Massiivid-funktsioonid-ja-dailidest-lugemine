@@ -7,7 +7,7 @@ namespace PickRandomFromFile
     {
         static void Main(string[] args)
         {
-            // string filePath = @"C:\Users\Laptop\samples\foods.txt"; // lihtsalt failist andmete maha lugemine ja kuvamine
+            // string filePath = @"C:\Users\...\samples\foods.txt"; // lihtsalt failist andmete maha lugemine ja kuvamine
             // string[] dataFromFile = File.ReadAllLines(filePath);
             // foreach(string element in dataFromFile)
             {
@@ -34,7 +34,7 @@ namespace PickRandomFromFile
 
         private static string GenerateRamdomFromFile(string fileName)
         {
-            string filePath = $@"C:\Users\Laptop\samples\{fileName}";
+            string filePath = $@"C:\Users\...\samples\{fileName}";
             string[] dataFromFile = File.ReadAllLines(filePath);
             string randomElement = dataFromFile[GenerateRamdomIndex(dataFromFile)];
 
