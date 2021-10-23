@@ -23,7 +23,7 @@ namespace ChuckNorris
 
         private static string GenerateRamdomFromFile(string fileName)
         {
-            string filePath = $@"C:\Users\Laptop\samples\{fileName}";
+            string filePath = $@"C:\Users\...\samples\{fileName}";
             string[] dataFromFile = File.ReadAllLines(filePath);
             string randomElement = dataFromFile[GenerateRamdomIndex(dataFromFile)];
 
